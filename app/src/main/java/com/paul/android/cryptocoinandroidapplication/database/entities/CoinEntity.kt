@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "coin")
-data class Coin(
+data class CoinEntity(
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "uid") val uid: Int,
     @ColumnInfo(name = "id") val id: String,
     @ColumnInfo(name = "symbol") val symbol: String,

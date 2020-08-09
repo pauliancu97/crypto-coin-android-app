@@ -1,4 +1,11 @@
 package com.paul.android.cryptocoinandroidapplication.database.entities
 
-class CurrencyEntity {
-}
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "currency")
+data class CurrencyEntity(
+    @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "uid") val uid: Int,
+    @ColumnInfo(name = "name") val name: String
+)
