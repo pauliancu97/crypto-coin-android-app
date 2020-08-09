@@ -3,7 +3,7 @@ package com.paul.android.cryptocoinandroidapplication.database.entities
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 
-@Entity(tableName = "brief_data", primaryKeys = ["coinUid", "currencyUid"])
+@Entity(tableName = "brief_data", primaryKeys = ["coin_uid", "currency_uid"])
 data class BriefDataEntity(
     @ColumnInfo(name = "coin_uid") val coinUid: Int,
     @ColumnInfo(name = "currency_uid") val currencyUid: Int,
