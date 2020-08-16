@@ -6,6 +6,7 @@ import com.paul.android.cryptocoinandroidapplication.dagger.modules.DatabaseModu
 import com.paul.android.cryptocoinandroidapplication.dagger.modules.MainActivityModule
 import com.paul.android.cryptocoinandroidapplication.dagger.modules.ServicesModule
 import com.paul.android.cryptocoinandroidapplication.ui.CurrenciesFragment
+import com.paul.android.cryptocoinandroidapplication.ui.LoadingScreenFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -21,4 +22,6 @@ interface ApplicationComponent{
     fun inject(mainActivity: MainActivity)
 
     fun inject(currenciesFragment: CurrenciesFragment)
+
+    fun inject(loadingScreenFragment: LoadingScreenFragment)
 }

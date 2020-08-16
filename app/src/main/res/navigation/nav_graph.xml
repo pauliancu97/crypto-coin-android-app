@@ -3,11 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/currenciesFragment">
+    app:startDestination="@id/loadingScreenFragment">
 
     <fragment
         android:id="@+id/currenciesFragment"
         android:name="com.paul.android.cryptocoinandroidapplication.ui.CurrenciesFragment"
         android:label="fragment_currencies"
         tools:layout="@layout/fragment_currencies" />
+    <fragment
+        android:id="@+id/loadingScreenFragment"
+        android:name="com.paul.android.cryptocoinandroidapplication.ui.LoadingScreenFragment"
+        android:label="fragment_loading_screen"
+        tools:layout="@layout/fragment_loading_screen" >
+        <action
+            android:id="@+id/action_loadingScreenFragment_to_currenciesFragment"
+            app:destination="@id/currenciesFragment" />
+    </fragment>
 </navigation>
