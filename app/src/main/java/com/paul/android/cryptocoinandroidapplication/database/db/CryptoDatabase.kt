@@ -4,18 +4,18 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.paul.android.cryptocoinandroidapplication.database.dao.CoinDao
+import com.paul.android.cryptocoinandroidapplication.database.dao.CryptoDao
 import com.paul.android.cryptocoinandroidapplication.database.entities.BriefDataEntity
 import com.paul.android.cryptocoinandroidapplication.database.entities.CoinEntity
 import com.paul.android.cryptocoinandroidapplication.database.entities.CurrencyEntity
 
 @Database(
     entities = [CoinEntity::class, CurrencyEntity::class, BriefDataEntity::class],
-    version = 1,
+    version = 3,
     exportSchema = false
 )
 public abstract class CryptoDatabase: RoomDatabase(){
-    abstract fun dao(): CoinDao
+    abstract fun dao(): CryptoDao
 
     companion object {
         @Volatile

@@ -10,5 +10,6 @@ data class BriefDataEntity(
     @ColumnInfo(name = "price") val price: Double,
     @ColumnInfo(name = "percent_change_one_hour") val percentChangeOneHour: Double,
     @ColumnInfo(name = "percent_change_one_day") val percentChangeOneDay: Double,
-    @ColumnInfo(name = "percent_change_seven_days") val percentChangeSevenDays: Double
+    @ColumnInfo(name = "percent_change_seven_days") val percentChangeSevenDays: Double,
+    @ColumnInfo(name = "timestamp") val timestamp: Long
 )
